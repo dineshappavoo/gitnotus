@@ -43,7 +43,6 @@ positional arguments:
 ```
 
 ##Configuration
-==============
 - Make apache tomcat web server up and running
 - Make an public URl to post the hook
 - In local use ngrok.com to make an URL. Next two steps are required in case if you do not have an public domain
@@ -54,14 +53,14 @@ positional arguments:
 - Start the local smtp server on port 1025 using the following command 'python -m smtpd -n -c DebuggingServer localhost:1025' to send emails 
 
 ##Modules:
-#Webhook POST Listener:
+###Webhook POST Listener:
 * This module listens to the POST url which is hooked with the github api. And invoke mail api to send the notification
 
-#JSON Parser 
+###JSON Parser 
 * This module the takes post request as JSON object and parse the commit/push information. 
 * And it includes commit message, files added, deleted, modified etc.
 
-#Repo Maintainer 
+###Repo Maintainer 
 * This module stores and maintains the user and repo information as a pickle file. This also can be maintained in YAML or JSON files
 * Every post request will be compared against this dictionary
 
