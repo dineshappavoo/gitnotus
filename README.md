@@ -1,4 +1,4 @@
-vmonere
+gitnotus
 =======================
 [![Build Status](https://drone.io/github.com/dineshappavoo/gitnotus/status.png)](https://drone.io/github.com/dineshappavoo/gitnotus/latest)
 
