@@ -20,8 +20,7 @@ Option | Specification
 ------------ | -------------
 addrepo | add new repository
 listinfo | get all user and repo info
-userinfo | list existing domain
-dominfo | display user info
+userinfo | display user info
 
 ##Licensing
 gitnotus is licensed under MIT License. See LICENSE for full license text.

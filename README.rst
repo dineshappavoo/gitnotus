@@ -1,4 +1,4 @@
-vmonere : github notification
+gitnotus : github notification
 ====================================
 
 .. image:: https://drone.io/github.com/dineshappavoo/gitnotus/status.png
@@ -15,19 +15,15 @@ vmonere : github notification
 
 `gitnotus` is a set of API's/tools written to manage github events. Event updates will be notified through web hooks.
 
-```
-
 Confiduration:
-1.Make apache tomcat web server up and running
-2.Make an public URl to post the hook
-3.In local use ngrok.com to make an URL () This step is required in case if you do not have an public domain
-3.1.download and install grok
-3.2./ngrok 8080
-4.Add the webhook URL to the git repo
-4.Start the webhook_handler to recieve json ./weghook_handler.py
-6.Start the local smtp server on port 1025 using the following command 'python -m smtpd -n -c DebuggingServer localhost:1025' to send emails
-
-```
+- Make apache tomcat web server up and running
+- Make an public URl to post the hook
+- In local use ngrok.com to make an URL. Next two steps are required in case if you do not have an public domain
+- download and install ngrok
+- ./ngrok 8080
+- Add the webhook URL to the git repo
+- Start the webhook_handler to recieve json ./weghook_handler.py
+- Start the local smtp server on port 1025 using the following command 'python -m smtpd -n -c DebuggingServer localhost:1025' to send emails 
 
 Features
 ========
