@@ -1,40 +1,44 @@
 vmonere : github notification
 ====================================
 
-.. image:: https://drone.io/github.com/dcsolvere/vmonere/status.png
-   :target: https://drone.io/github.com/dcsolvere/vmonere
+.. image:: https://drone.io/github.com/dineshappavoo/gitnotus/status.png
+   :target: https://drone.io/github.com/dineshappavoo/gitnotus
    :alt: drone.io CI build status
 
-.. image:: https://pypip.in/v/vmonere/badge.png
-   :target: https://pypi.python.org/pypi/vmonere/
+.. image:: https://pypip.in/v/gitnotus/badge.png
+   :target: https://pypi.python.org/pypi/gitnotus/
    :alt: Latest PyPI version
 
-.. image:: https://pypip.in/d/vmonere/badge.png
-   :target: https://pypi.python.org/pypi/vmonere/
+.. image:: https://pypip.in/d/gitnotus/badge.png
+   :target: https://pypi.python.org/pypi/gitnotus/
    :alt: Number of PyPI downloads
 
-`vmonere` a wrapper CLI for virtual machine monitoring and resource usage comparison effectively. Vmonere framework enables user to monitor the real time guest and host resource usage.
+`gitnotus` is a set of API's/tools written to manage github events. Event updates will be notified through web hooks.
 
-GITNOTUS:
+```
+
+Confiduration:
 1.Make apache tomcat web server up and running
 2.Make an public URl to post the hook
-    -In local use ngrok.com to make an URL
-        -download and install
-        -./ngrok 8080
-3.Add the webhook URL to the git repo
-4.Start the webhook_handler to recieve json
-5.Call the mail API by passing mail id from thr json
-6.Start the local smtp server on port 1025 using the following command 'python -m smtpd -n -c DebuggingServer localhost:1025'
+3.In local use ngrok.com to make an URL () This step is required in case if you do not have an public domain
+3.1.download and install grok
+3.2./ngrok 8080
+4.Add the webhook URL to the git repo
+4.Start the webhook_handler to recieve json ./weghook_handler.py
+6.Start the local smtp server on port 1025 using the following command 'python -m smtpd -n -c DebuggingServer localhost:1025' to send emails
 
+```
 
 Features
 ========
-* CLI for virtual machine monitoring and resource usage comparison effectively.
+* CLI to manage and effetively utilize github events.
 
 Requirements
 ============
 * Python 2.6, 2.7, 3.2, 3.3, 3.4
-* setuptools
+* Flask
+* json
+* pickle
 
 License
 =======

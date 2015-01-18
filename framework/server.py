@@ -10,7 +10,7 @@ def index():
 @app.route('/my-link/')
 def my_link():
     print 'I got clicked!'
-    return 'Click.'
+    return "OK"
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='127.0.0.1', port=5000)
