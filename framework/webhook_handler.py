@@ -5,8 +5,21 @@ sys.path.append('/Users/Dany/Documents/gitnotus/mail')
 
 from notification_mail import send_notification_mail
 from json_parser import format_json
+from repo_maintainer import is_repo_available_returnmail
 from flask import Flask, request
 import json
+#==============================================================================
+# Variables
+#==============================================================================
+
+# Some descriptive variables
+#name                = "gitnotus"
+#version             = "0.1.0"
+#long_description    = """gitnotus is a set of API's/tools written to manage github events."""
+#url                 = "https://github.com/dineshappavoo/gitnotus"
+#license             = ""
+
+#==============================================================================
 
 app = Flask(__name__)
 
@@ -29,9 +42,15 @@ def foo():
     commit_message =data['head_commit']['message']
     print "Commit Message : "+str(commit_message)
     
-    #call email service
-    mail_content = format_json(data)
-    invoke_email('push', repo_name, mail_content, author_email)
+    #Get email address by passing repo_name
+    email_address = is_repo_available_returnmail(repo_name)
+    
+    if email_address == None :
+        pass
+    else:
+        #call email service
+        mail_content = format_json(data)
+        invoke_email('push', repo_name, mail_content, email_address)
     return "OK"
 
 def invoke_email(event_type, repo_name, mail_content, to_email):

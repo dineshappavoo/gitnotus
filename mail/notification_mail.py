@@ -13,16 +13,11 @@ from email.mime.text import MIMEText
 # Some descriptive variables
 #name                = "gitnotus"
 #version             = "0.1.0"
-#long_description    = """gitnotus is a set of API's/tools written to invoke notification for git events."""
-#url                 = "https://github.com/dineshappavoo/virtdc"
+#long_description    = """gitnotus is a set of API's/tools written to manage github events."""
+#url                 = "https://github.com/dineshappavoo/gitnotus"
 #license             = ""
 
 #==============================================================================
-
-#-------------------------------------------------------------------------------
-#Send email to the support team or user
-#   $virsh migrate web1 qemu+ssh://desthost/system
-#-------------------------------------------------------------------------------
 
 
 to_address = ''

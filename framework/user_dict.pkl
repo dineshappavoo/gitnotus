@@ -1,0 +1,16 @@
+(dp0
+S'dineshappavoo'
+p1
+(iUser
+User
+p2
+(dp3
+S'email_address'
+p4
+S'dinesha.utd@gmail.com'
+p5
+sS'repo_name'
+p6
+S'labineer'
+p7
+sbs.
