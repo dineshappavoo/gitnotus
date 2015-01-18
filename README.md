@@ -2,7 +2,7 @@ vmonere
 =======================
 [![Build Status](https://drone.io/github.com/dineshappavoo/gitnotus/status.png)](https://drone.io/github.com/dineshappavoo/gitnotus/latest)
 
-Monitor the virtual machine and host resource usage starting from very minimal duration
+Manage the github events and notify the users
 
 
 ##gitnotus Command Line Interface
