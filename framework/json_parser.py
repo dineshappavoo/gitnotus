@@ -5,7 +5,18 @@ sys.path.append('/Users/Dany/Documents/gitnotus/mail')
 
 from notification_mail import send_notification_mail
 import json
+#==============================================================================
+# Variables
+#==============================================================================
 
+# Some descriptive variables
+#name                = "gitnotus"
+#version             = "0.1.0"
+#long_description    = """gitnotus is a set of API's/tools written to manage github events."""
+#url                 = "https://github.com/dineshappavoo/gitnotus"
+#license             = ""
+
+#==============================================================================
 def format_json(data):
     mail_content = ''
     #path = '/Users/Dany/Documents/gitnotus/framework/sample.json'

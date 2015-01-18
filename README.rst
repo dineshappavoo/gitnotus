@@ -15,7 +15,8 @@ gitnotus : github notification
 
 `gitnotus` is a set of API's/tools written to manage github events. Event updates will be notified through web hooks.
 
-Confiduration:
+Configuration
+==============
 - Make apache tomcat web server up and running
 - Make an public URl to post the hook
 - In local use ngrok.com to make an URL. Next two steps are required in case if you do not have an public domain

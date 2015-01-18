@@ -10,7 +10,18 @@ import json
 
 HOST_NAME = sys.argv[1]
 PORT_NUMBER = int(sys.argv[2])
+#==============================================================================
+# Variables
+#==============================================================================
 
+# Some descriptive variables
+#name                = "gitnotus"
+#version             = "0.1.0"
+#long_description    = """gitnotus is a set of API's/tools written to manage github events."""
+#url                 = "https://github.com/dineshappavoo/gitnotus"
+#license             = ""
+
+#==============================================================================
 
 def handle_hook(payload):
     pass

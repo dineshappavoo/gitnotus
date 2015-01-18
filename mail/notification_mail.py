@@ -65,4 +65,4 @@ if __name__ == "__main__":
     # Open a plain text file for reading.  For this example, assume that
     # the text file contains only ASCII characters.
     #fp = open('/var/lib/virtdc/mail/textfile.py', 'rb')
-    send_notification_mail('Account settled up by Dinesh Appavoo','Account balance is been settled up by Dinesh Appavoo on 01/06/2015')
+    send_notification_mail('Test','Test Content', 'dinesha.cit@gmail.com')
